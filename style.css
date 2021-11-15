@@ -1,0 +1,370 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  background: url("./assets/logo.png") 50% no-repeat;
+  width: 50px;
+  height: 48px;
+}
+
+.links {
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.links li {
+  display: inline-block;
+}
+
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px 16px;
+  padding: 10px 20px;
+  color: #868686;
+  border-radius: 2px;
+}
+
+.link.active {
+  background: #ffbb42;
+  color: #fff;
+}
+
+.link:hover {
+  background: #ffbb42;
+  color: #fff;
+}
+
+  
+
+.menu-button {
+  display: none;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background: #ffbb42;
+  padding: 10px;
+  color: #fff;
+}
+
+@media all and (max-width: 745px) {
+  .menu-button {
+    display: block;
+  }
+  .links {
+    display: none;
+  }
+}
+
+
+.btn-section {
+  height: 590px;
+  background-color: #709dca;
+  text-align: center;
+  font-family: "Myraid Pro", sans-serif;
+  color: #fff;
+}
+
+input {
+  width: 280px;
+  height: 45px;
+  border-radius: 3px;
+  padding: 0 0 0 40px;
+}
+.form-wrapper{
+  display: flex;
+  justify-content: center;
+}
+button {
+  width: 280px;
+  height: 45px;
+  background-color: #ffbb42;
+  border-radius: 3px;
+  color: #fff;
+}
+.img-before{
+  position: relative;
+}
+.img-before:before{
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('./assets/username.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.img-before__email {
+  position: relative;
+}
+
+.img-before__email:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  background-image: url("./assets/message.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.img-before__number {
+  position: relative;
+}
+
+.img-before__number:before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("./assets/call.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.main-img {
+  content: '';
+  width: 647px;
+  height: 343px;
+  background-image: url('./assets/computer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  margin-top: 179.5px;
+  position: relative;
+
+}
+
+.section__services {
+  font-family: "Myraid Pro", sans-serif;
+  color: #394b50;
+  text-align: center;
+  padding-top: 100px;
+  position: relative;
+
+}
+
+h3 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 13px;
+}
+
+.section__left {
+  float: left;
+  width: 560px;
+  position: relative;
+}
+
+.section__right {
+  float: right;
+  width: 560px;
+}
+
+.section__both {
+  margin-top: 40px;
+  position: relative;
+}
+
+.img__front:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url('./assets/front.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+   position: relative;
+   right: 200px;
+   top: 100px;
+}
+
+.img__working:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url('./assets/working.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+   position: relative;
+   right: 200px;
+   top: 100px;
+
+}
+
+.img__code:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url('./assets/code.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+   position: relative;
+   right: 200px;
+   top: 100px;
+}
+
+.img__design:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url('./assets/design.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+   position: relative;
+   right: 200px;
+   top: 100px;
+}
+
+.img__retina:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url('./assets/retina.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+   position: relative;
+   right: 200px;
+   top: 100px;
+}
+
+.img__flat:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url('./assets/flat.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+   position: relative;
+   right: 200px;
+   top: 50px;
+}
+
+  .container-second {
+  max-width: 1200px;
+  font-family: "Myraid Pro", sans-serif;
+  color: #fff;
+  clear: left;
+  margin: 0 auto;
+  background-color: #ffc155;
+
+
+}
+
+.box-main {
+  height: 515px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  width: 567px;
+  height: 240px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin-top: 20px;
+  color: black;
+
+}
+
+
+.head__happy {
+  text-align: center;
+}
+
+.first:before {
+  content: '';
+  width: 125px;
+  height: 125px;
+  background-image: url('./assets/girl.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+
+}
+
+.second:before {
+  content: '';
+  width: 125px;
+  height: 125px;
+  background-image: url('./assets/man.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.third:before {
+  content: '';
+  width: 125px;
+  height: 125px;
+  background-image: url('./assets/secondman.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+
+}
+
+.fourth:before {
+  content: '';
+  width: 125px;
+  height: 125px;
+  background-image: url('./assets/thirdman.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+
+}
+
+footer {
+  height: 50px;
+  background-color: #709dca;
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
+}
